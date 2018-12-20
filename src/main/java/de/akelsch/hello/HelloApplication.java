@@ -30,6 +30,6 @@ public class HelloApplication {
     private Mono<ServerResponse> hello(ServerRequest request) {
         return ServerResponse.ok()
                 .contentType(TEXT_PLAIN)
-                .body(BodyInserters.fromObject("Hello, World! v4"));
+                .body(BodyInserters.fromObject("Hello, World! v5"));
     }
 }
