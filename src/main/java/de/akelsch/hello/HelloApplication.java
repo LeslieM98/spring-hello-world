@@ -30,6 +30,6 @@ public class HelloApplication {
     private Mono<ServerResponse> hello(ServerRequest request) {
         return ServerResponse.ok()
                 .contentType(TEXT_PLAIN)
-                .body(BodyInserters.fromObject("Server error in 5 sec" + 0/0));
+                .body(BodyInserters.fromObject("TestError" + 0/0)); 
     }
 }
