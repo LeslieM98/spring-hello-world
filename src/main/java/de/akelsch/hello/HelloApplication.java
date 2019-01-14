@@ -28,6 +28,7 @@ public class HelloApplication {
     }
 
     private Mono<ServerResponse> hello(ServerRequest request) {
+        throw new ArithmeticException("Verteilte Systeme suckt hart!");
         return ServerResponse.ok()
                 .contentType(TEXT_PLAIN)
                 .body(BodyInserters.fromObject("Server error in 5 sec"));
